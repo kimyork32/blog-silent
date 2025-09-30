@@ -1,0 +1,26 @@
+[
+    {
+        "page": 1,
+        "title": "title article 1",
+        "image": "article background image url 1",
+        "author": "author of the article 1",
+        "previousContent": "previous content of the article 1",
+        "urlArticle": "url of the article 1"
+    },
+    {
+        "page": 1,
+        "title": "title article 2",
+        "image": "article background image url 2",
+        "author": "author of the article 2",
+        "previousContent": "previous content of the article 2",
+        "urlArticle": "url of the article 2"
+    },
+    {
+        "page": 2,
+        "title": "title article 3",
+        "image": "article background image url 3",
+        "author": "author of the article 3",
+        "previousContent": "previous content of the article 3",
+        "urlArticle": "url of the article 3"
+    }
+]

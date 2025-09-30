@@ -1,0 +1,112 @@
+/* Estilo para los previews de artículos */
+.article-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos dentro de cada artículo */
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid #444; /* Borde oscuro */
+  border-radius: 10px;
+  background-color: #222; /* Fondo oscuro */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7); /* Sombra oscura */
+}
+
+/* Estilo para las imágenes de los artículos */
+.article-image {
+  width: 100%; /* Imagen dentro de ArticlePreview tendrá todo el ancho disponible */
+  height: auto;
+  border-radius: 8px;
+  max-width: 350px; /* Limita el tamaño máximo de la imagen */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Sombra oscura alrededor de la imagen */
+}
+
+/* Estilo del contenido del artículo */
+.article-content {
+  padding: 10px;
+  text-align: center; /* Centra el texto dentro del artículo */
+}
+
+/* Estilo del título del artículo */
+.article-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Sombra oscura para resaltar */
+}
+
+/* Estilo de los autores del artículo */
+.article-author {
+  font-size: 1rem;
+  color: #bbb; /* Texto gris claro */
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del contenido previo del artículo */
+.article-previous-content {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Estilo del botón "Leer más" */
+.read-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #720c1a;;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra suave */
+}
+
+.read-more-btn:hover {
+  background-color: #720c1a;;
+}
+
+/* Estilo de la paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  background-color: #720c1a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra alrededor de los botones */
+}
+
+.pagination button:disabled {
+  background-color: #412424;
+  cursor: not-allowed;
+}
+
+
+
+.pagination span {
+  font-size: 1.1rem;
+}
+
+/* Asegúrate de que las imágenes en los previews se ajusten adecuadamente */
+.article-preview .article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-width: 350px; /* Limita el tamaño máximo de la imagen */
+}

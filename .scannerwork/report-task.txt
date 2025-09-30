@@ -1,0 +1,6 @@
+projectKey=my:blog
+serverUrl=http://localhost:9000
+serverVersion=25.9.0.112764
+dashboardUrl=http://localhost:9000/dashboard?id=my%3Ablog
+ceTaskId=0f320c51-f301-4d90-9900-786058f585e6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=0f320c51-f301-4d90-9900-786058f585e6

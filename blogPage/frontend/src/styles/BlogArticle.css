@@ -1,0 +1,185 @@
+/* Artículo contenedor con fondo oscuro */
+.article-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #121212; /* Fondo oscuro */
+    color: #e1e1e1; /* Texto claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Primer bloque con imagen y overlay oscuro */
+  .header-block {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    background-color: #333; /* Fondo más oscuro para el encabezado */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Sombra fuerte */
+  }
+  
+  /* Contenido del encabezado (título, autores, categorías) */
+  .header-content {
+    position: relative; /* Permite que el texto esté por encima del overlay */
+    z-index: 2; /* Hace que el texto esté por encima del overlay */
+  }
+  
+  .header-block h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 25px; /* Efecto de sombra roja */
+  }
+  
+  .article-author {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .category-list {
+    display: flex; /* Usamos flex para mantener los elementos en una línea */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea cuando no haya espacio */
+    margin-top: 10px;
+    padding: 0;
+  }
+  
+  .category-item {
+    background-color: #444;
+    padding: 5px 10px;
+    font-size: 0.75rem; /* Reduce el tamaño de la fuente */
+    border: 1px solid #666;
+    text-transform: capitalize;
+    color: #bbb;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    margin: 5px; /* Asegura la separación entre los elementos */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  }
+  
+  
+  
+  /* Estilo para los elementos en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .category-item {
+      max-width: calc(50% - 10px); /* 2 items por fila en pantallas medianas */
+    }
+  }
+  
+  /* Estilo para los elementos en pantallas aún más pequeñas */
+  @media (max-width: 480px) {
+    .category-item {
+      max-width: 100%; /* 1 item por fila en pantallas pequeñas */
+    }
+  }
+  
+  
+  /* Overlay oscuro sobre el fondo */
+  .overlay {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+    /* background-color: rgba(46, 46, 46, 0.8); Fondo oscuro más opaco */
+    /* z-index: 1; */
+    /* height: 50%; */
+  }
+  
+  /* Estilo de las imágenes en el contenido */
+  .article-image {
+    max-width: 65%;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Párrafos */
+  .article-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Sombra tenue para el texto */
+    margin-bottom: 15px;
+  }
+  
+  .article-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Efecto de sombra */
+  }
+  
+  /* Tabla */
+  .article-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid #444; /* Bordes oscuros */
+  }
+  
+  .article-container table th,
+  .article-container table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444;
+    background-color: #222;
+  }
+  
+  .article-container table th {
+    background-color: #333;
+  }
+  
+  .article-container table tr:nth-child(even) {
+    background-color: #333;
+  }
+  
+  /* Lista */
+  .article-container ul {
+    padding-left: 20px;
+  }
+  
+  .article-container ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .article-container ul li:before {
+    content: "⚫"; /* Añadir puntos oscuros */
+    position: absolute;
+    left: -20px;
+  }
+  
+  /* Mensajes de error y carga */
+  .loading,
+  .error,
+  .no-data {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Creepster', cursive; /* Fuente terrorífica */
+  }
+
+  
+  .no-data {
+    font-size: 1.2rem;
+    color: #ccc;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  

@@ -1,0 +1,25 @@
+/* Asegúrate de que el cuerpo ocupe toda la pantalla */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  /* align-items: center;  */
+  background-color: #121212; /* Fondo oscuro */
+  color: #e1e1e1; /* Texto claro */
+  font-family: 'Creepster', cursive; /* Fuente de terror */
+}
+
+/* El contenedor principal de la app */
+.App {
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo para evitar que se extienda demasiado */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center; /* Centra el título y otros textos dentro */
+  background-color: #1c1c1c; /* Fondo oscuro */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); /* Sombra oscura */
+  overflow: hidden;
+}
